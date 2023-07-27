@@ -10,4 +10,4 @@ How to use the project
    2. if the user is loged in and the form data is correct then it will successfully store data on database.
    3. Below the submit button, there is login/signup, user can signup and then log in.
    4. After logging in, it will redirect to '/' page and user can submit the form.
-   5. it is also mobile responsive.
+   5. it is also responsive.
