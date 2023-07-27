@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.image-container {
+  max-width: 100%;
+  margin: 1%;
+}
+
+.text7 {
+  width: 8%;
+}
+
+.text8 {
+  width: 35%;
+}
+
+@media (max-width: 500px) {
+  .text7 {
+    width: 40px;
+  }
+
+  .text8 {
+    width: 150px;
+  }
+}

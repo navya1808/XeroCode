@@ -1,0 +1,55 @@
+.form-container {
+  width: 25%;
+}
+
+.form-container form {
+  background-color: #000;
+  height: auto;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="email"],
+.form-container form input[type="password"] {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 10px;
+  border-image: linear-gradient(to right, #ff3bff, #ecbfbf, #5c24ff, #d94fd5) 1;
+  background-color: #000;
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container form input[type="submit"] {
+  padding: 2% 4%;
+  border-image: linear-gradient(to right, #ff3bff, #ecbfbf, #5c24ff, #d94fd5) 1; /* Apply the gradient border */
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Space Grotesk";
+}
+
+.form-container form input[type="submit"]:hover {
+  padding: 2% 4%;
+  background-color: #ff3bff;
+  color: #000;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .form-container {
+    width: 190px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-container {
+    width: 140px;
+  }
+}

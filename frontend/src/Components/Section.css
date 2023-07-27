@@ -1,0 +1,36 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.image-container {
+  max-width: 100%;
+  margin: 1%;
+  height: auto;
+}
+
+.header-text {
+  width: 60%;
+  height: 3%;
+}
+
+.Code-text {
+  width: 25%;
+  height: 4%;
+}
+
+.process-text {
+  width: 40%;
+}
+
+.ai-text {
+  width: 60%;
+}
+
+.section {
+  width: 80%;
+  height: auto;
+}
