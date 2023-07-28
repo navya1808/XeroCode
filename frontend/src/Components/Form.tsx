@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Form.css";
 import axios from "axios";
 import Link from "next/link";
+import {API_URL} from "../Constants"
 
 interface Props {
   token: string;
@@ -17,7 +18,7 @@ const HomePage: React.FC<Props> = ({ token }) => {
       if (validateName() && validateEmail()) {
         axios
           .post(
-            "http://localhost:5000/api/addFormData",
+            `${API_URL}/addFormData`,
             { name: name, email: email },
             {
               headers: {

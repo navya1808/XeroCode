@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Form.css";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import {API_URL} from "../Constants"
 
 const LoginForm = () => {
   const [password, setPassword] = useState("");
@@ -14,7 +15,7 @@ const LoginForm = () => {
     e.preventDefault();
     if (validateEmail() && validatePassword()) {
     axios
-      .post("http://localhost:5000/api/login", {
+      .post(`${API_URL}/login`, {
         email: email,
         password: password,
       })

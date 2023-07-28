@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Form.css";
 import Link from "next/link";
+import {API_URL} from "../Constants"
 
 const SignUpForm = () => {
   const [name, setName] = useState("");
@@ -12,7 +13,7 @@ const SignUpForm = () => {
     e.preventDefault();
     if (validateName() && validateEmail() && validatePassword()) {
       axios
-        .post("http://localhost:5000/api/register", {
+        .post(`${API_URL}/register`, {
           email: email,
           password: password,
           name: name,
