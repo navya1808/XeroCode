@@ -1,1 +1,1 @@
-export const API_URL = 'http://ec2-13-233-151-98.ap-south-1.compute.amazonaws.com/api'
+export const API_URL = 'https://xerocode-bkz5.onrender.com/api'
